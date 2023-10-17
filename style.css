@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(to left, rgb(146, 1, 1), #420000);
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Young Serif', serif;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.fenrir{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to left, rgb(146, 1, 1), #420000);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.fenrir-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fenrir-text h1{
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+    font-family: 'Young Serif', serif;
+}
+
+.fenrir-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.fenrir-logo{
+    width: 700px;
+    height: auto;
+}
+
+.hakkimizda {
+    margin-top: 100px;
+    padding: 30px 0; 
+}
+
+.hakkimizda .heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.hakkimizda .heading h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.hakkimizda .heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.hakkimizda .heading p{
+    font-size: 18px;
+    color: whitesmoke;
+    margin-bottom: 35px;
+}
+
+
+.hakkimizda .hakkimizda-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.hakkimizda .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hakkimizda .about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.hakkimizda .about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.hakkimizda .about-image:hover img {
+    transform: scale(1.2);
+}
+
+.hakkimizda .about-content {
+    flex: 1;
+}
+
+.hakkimizda .about-content h2 {
+    font-size: 23px; 
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hakkimizda .about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: wheat;
+}
+
+.galeri{
+    margin-top: 100px;
+    padding: 30px 0; 
+}
+
+.galeri .galeri-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.galeri .galeri-container .galeri-heading{
+    width: 50%;
+    padding-bottom: 50px;
+
+}
+
+.galeri .galeri-container .galeri-heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.galeri .galeri-container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.galeri .galeri-container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.galeri .galeri-container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.iletisim{
+    margin-top: 100px;
+    padding: 30px 0; 
+}
+
+.iletisim .modal {
+    padding: 45px 45px;
+    text-align: center;
+    background-color: #0c0c0c;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.75)
+}
+
+.iletisim .modal p{
+    color: white;
+}
+
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .fenrir-text{
+        padding-top: 115px;
+    }
+    .fenrir-logo{
+        text-align: center;
+    }
+    .fenrir-logo img{
+        width: 560px;
+        height: auto;
+    }
+
+    .fenrir{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #420000;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    .fenrir-logo img{
+        width: 100%;
+        height: auto;
+    }
+
+    .hakkimizda .heading{
+        padding: 0px 20px;
+    }
+
+    .hakkimizda h1{
+        font-size: 36px;
+    }
+
+    .hakkimizda p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .hakkimizda .hakkimizda-container{
+        padding: 0px;
+    }
+    .hakkimizda .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .hakkimizda .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .hakkimizda .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .galeri .galeri-container .box{
+        flex-direction: column;
+    }
+
+    .galeri .galeri-container .box .dream{
+        width: 100%;
+    }
+}
